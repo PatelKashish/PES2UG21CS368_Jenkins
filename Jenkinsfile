@@ -10,7 +10,7 @@ pipeline {
       stage('Test') {
         steps {
           sh 'mvn test'
-          echo 'Test Stage Successful'
+          eco 'Test Stage Successful'
           post {
             always {
               junit 'target/surefire-reports/*.xml'
